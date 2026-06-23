@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Sovereign Audit | Angie Marie Global</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Forum&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --sand:#F7F0DE; --sand2:#ECE0C4; --terra:#8A6B2D; --terrad:#5E4719;
+    --gold:#C9A24A; --goldb:#E6CE8E; --ink:#2E2A20; --soft:#6E6149; --line:#E8DCBE; --cream:#F7F0DE;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  body{background:var(--sand);color:var(--ink);font-family:'Montserrat',system-ui,sans-serif;font-weight:400;line-height:1.65;}
+  .wrap{max-width:760px;margin:0 auto;padding:0 0 50px;}
+  .hero-img{width:100%;display:block;aspect-ratio:2/1;object-fit:cover;object-position:50% 22%;}
+  .hero{position:relative;width:100%;aspect-ratio:2/1;background:var(--terra);overflow:hidden;display:flex;align-items:flex-end;}
+  .hero .marks{position:absolute;font-family:'Forum',serif;color:var(--goldb);opacity:.14;font-size:17vw;line-height:.8;top:6%;left:-2%;letter-spacing:.02em;white-space:nowrap;}
+  .hero .marks.two{top:44%;left:6%;opacity:.09;}
+  .hero-inner{position:relative;padding:26px;z-index:2;}
+  .hero .eyebrow.light{color:var(--cream);opacity:.9;}
+  .hero-title{font-family:'Forum',serif;color:var(--cream);font-size:2.6rem;line-height:1;margin-top:8px;}
+  .pad{padding:0 26px;}
+  h1{font-family:'Forum',Georgia,serif;font-weight:400;color:var(--terra);font-size:2.4rem;line-height:1.08;margin:30px 0 14px;}
+  h2{font-family:'Forum',serif;font-weight:400;color:var(--terra);font-size:1.6rem;margin:6px 0 12px;}
+  .eyebrow{font-weight:600;letter-spacing:.26em;text-transform:uppercase;font-size:.72rem;color:var(--gold);margin-top:30px;}
+  p{color:var(--soft);margin-bottom:14px;font-size:1.02rem;}
+  p.ink{color:var(--ink);}
+  .lede{font-style:italic;font-family:'Forum',serif;font-size:1.25rem;color:var(--terra);margin:16px 0;}
+  .howbox{background:var(--sand2);border-left:3px solid var(--gold);padding:18px 20px;margin:22px 0 8px;border-radius:4px;}
+  .howbox .scale-key{display:flex;gap:18px;flex-wrap:wrap;margin-top:10px;}
+  .howbox .scale-key span{font-size:.92rem;color:var(--soft);}
+  .howbox .scale-key b{font-family:'Forum',serif;color:var(--gold);font-size:1.2rem;margin-right:5px;}
+  .q{display:flex;align-items:center;gap:14px;padding:18px 0;border-bottom:1px solid var(--line);flex-wrap:wrap;}
+  .qnum{font-family:'Forum',serif;color:var(--gold);font-size:1.3rem;width:24px;flex:0 0 24px;}
+  .qtext{flex:1;min-width:200px;font-size:1rem;color:var(--ink);}
+  .scale{display:flex;gap:8px;margin-left:38px;}
+  .opt{width:42px;height:42px;border:1.5px solid var(--terra);background:transparent;color:var(--terra);
+        font-family:'Forum',serif;font-size:1.15rem;border-radius:8px;cursor:pointer;transition:.15s;}
+  .opt:hover{background:rgba(0,0,0,.05);}
+  .opt.sel{background:var(--terra);color:var(--cream);border-color:var(--terra);}
+  .totalcard{background:var(--terra);color:var(--cream);border-radius:8px;padding:22px 26px;margin:26px 0 6px;display:flex;align-items:center;justify-content:space-between;gap:14px;}
+  .totalcard .tc-lbl{font-family:'Forum',serif;font-size:1.35rem;}
+  .totalcard .tc-num{font-family:'Forum',serif;font-size:2.2rem;color:var(--goldb);white-space:nowrap;}
+  .result{display:none;margin-top:30px;}
+  .result.show{display:block;animation:fade .5s ease;}
+  @keyframes fade{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  .band{border-left:3px solid var(--gold);padding:4px 0 4px 20px;margin:8px 0 26px;}
+  .band .rng{font-weight:600;letter-spacing:.24em;text-transform:uppercase;font-size:.72rem;color:var(--gold);}
+  .band h2{margin:6px 0 10px;}
+  .panel{background:var(--terra);color:var(--cream);border-radius:6px;padding:26px;margin:24px 0;}
+  .panel.gold-frame{border:1px solid var(--gold);}
+  .panel h2,.panel p{color:var(--cream);}
+  .saysit{font-family:'Forum',serif;font-style:italic;font-size:1.55rem;color:var(--goldb);text-align:center;margin:18px 0;line-height:1.35;}
+  .cta{display:inline-block;background:var(--gold);color:var(--terrad);font-weight:600;text-decoration:none;
+    padding:16px 34px;border-radius:8px;font-size:1.02rem;letter-spacing:.02em;margin-top:8px;}
+  .cta:hover{opacity:.92;}
+  .signoff{font-family:'Forum',serif;color:var(--terra);font-size:1.2rem;margin-top:30px;}
+  .ps{font-family:'Forum',serif;font-style:italic;color:var(--soft);margin-top:4px;}
+  .hint{font-size:.9rem;color:var(--soft);font-style:italic;margin-top:10px;}
+  footer{text-align:center;color:var(--gold);font-size:.7rem;letter-spacing:.24em;text-transform:uppercase;margin-top:40px;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="hero">
+      <div class="marks">sovereign</div>
+      <div class="marks two">sovereign</div>
+      <div class="hero-inner">
+        <div class="eyebrow light">Angie Marie Global</div>
+        <div class="hero-title">The Sovereign Audit</div>
+      </div>
+    </div>
+  <div class="pad">
+    <div class="eyebrow">Angie Marie Global</div>
+    <h1>The Sovereign Audit</h1>
+    <p class="ink" style="font-size:1.12rem;">A 10-minute mirror that shows you where you are still waiting outside your own authority.</p>
+
+    <div class="eyebrow">Before you begin</div>
+    <p>You have done the work. You decided, you widened, you let yourself be held. And still, in the rooms that matter, you wait. You glance at the room to see whether you are allowed to lead. You price yourself by what others will accept. You dim your voice to keep your place.</p>
+    <p class="lede">Whose permission are you still waiting for to be who you already are.</p>
+    <p>You have called it humility. Reading the room. It is none of those. It is a throne you keep standing beside, waiting for someone to tell you that you are allowed to sit in it. This is not a test. It is a mirror.</p>
+
+    <div class="howbox">
+      <div class="eyebrow" style="margin-top:0;">How to score</div>
+      <div class="scale-key">
+        <span><b>0</b>rarely true</span><span><b>1</b>sometimes true</span><span><b>2</b>often true</span><span><b>3</b>almost always</span>
+      </div>
+    </div>
+
+    <div class="eyebrow">The twelve</div>
+    <div id="questions">
+    <div class="q" data-i="0">
+      <div class="qnum">1</div>
+      <div class="qtext">I wait to be chosen rather than choosing myself.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="1">
+      <div class="qnum">2</div>
+      <div class="qtext">I look to the room to tell me whether I am allowed to lead.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="2">
+      <div class="qnum">3</div>
+      <div class="qtext">I hand my authority to other people's opinions of me.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="3">
+      <div class="qnum">4</div>
+      <div class="qtext">I price myself by what others will accept, not by what is true.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="4">
+      <div class="qnum">5</div>
+      <div class="qtext">I dim my voice to keep my place in the room.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="5">
+      <div class="qnum">6</div>
+      <div class="qtext">I ask, in subtle ways, for permission to take up the space I already hold.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="6">
+      <div class="qnum">7</div>
+      <div class="qtext">I follow the frequency of the room instead of setting it.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="7">
+      <div class="qnum">8</div>
+      <div class="qtext">I treat my own knowing as a second opinion.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="8">
+      <div class="qnum">9</div>
+      <div class="qtext">I wait for someone more credentialed to say it first.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="9">
+      <div class="qnum">10</div>
+      <div class="qtext">I lead from behind, careful never to look like I am claiming the seat.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="10">
+      <div class="qnum">11</div>
+      <div class="qtext">I shape my work around being liked rather than being the source.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    <div class="q" data-i="11">
+      <div class="qnum">12</div>
+      <div class="qtext">I am still asking for permission to be who I already am.</div>
+      <div class="scale" role="group" aria-label="Score 0 to 3">
+        <button class="opt" data-v="0">0</button>
+        <button class="opt" data-v="1">1</button>
+        <button class="opt" data-v="2">2</button>
+        <button class="opt" data-v="3">3</button>
+      </div>
+    </div>
+    </div>
+
+    <div class="totalcard">
+      <div class="tc-lbl">Your total</div>
+      <div class="tc-num"><span id="totalNum">0</span> / 36</div>
+    </div>
+    <p class="hint">Answer all twelve and your result appears below.</p>
+
+    <div class="result" id="result">
+      <div class="eyebrow">What your number is showing you</div>
+      <h2>This is not a grade. It is how far you stand from your own seat.</h2>
+      <div class="band">
+        <div class="rng" id="bandRange"></div>
+        <h2 id="bandName"></h2>
+        <p id="bandBody"></p>
+      </div>
+
+      <div class="eyebrow">The 90 second throne</div>
+      <p>Sit up. Both feet on the floor. Crown of your head lifting. Bring to mind the room where you wait, the place you keep glancing for the nod. And just for ninety seconds, stop waiting. Take the seat. Simply. The way someone sits in a chair that has always been theirs.</p>
+      <div class="saysit">I am the one who chooses.<br>I do not wait to be chosen.</div>
+      <p>Feel the part of you that wants to look around first, to check whether you are allowed. That glance is the waiting. Let your spine lengthen by one inch. The throne was always yours. You were just waiting for permission to sit down.</p>
+
+      <div class="panel gold-frame">
+        <h2>The doorway</h2>
+        <p>Most people will read this, feel the recognition, and go back to waiting for the nod by morning. You do not have to be most people.</p>
+        <p>Sovereign is twenty-two days where you stop being held and become the one who holds. You build your own field, your own offer, your own voice, until you set the frequency the room calibrates to. You have been the seeker long enough. This is where you become the source.</p>
+        <a class="cta" href="https://angiemarieglobal.com/sovereign" target="_blank" rel="noopener">Take the throne</a>
+      </div>
+
+      <div class="signoff">I love you, Angie x</div>
+      <div class="ps">P.S. Remember, abundance is your baseline.</div>
+    </div>
+    <footer>Abundance is your baseline</footer>
+  </div>
+</div>
+<script>
+  const answers = new Array(12).fill(null);
+  const qEls = document.querySelectorAll('.q');
+  const totalNum = document.getElementById('totalNum');
+  const result = document.getElementById('result');
+  const bands = [
+    {min:0,max:9,range:'0 to 9',name:"The Sovereign",body:"You reign from your own authority more than most. A few places you still ask. Even at this range, notice where your number landed. That is the last of the waiting."},
+    {min:10,max:18,range:'10 to 18',name:"The Quiet Crown",body:"You hold your authority, but you still glance to the room for the nod. You lead, and then you check whether you were allowed to. The invitation is to stop looking for the permission you have already earned."},
+    {min:19,max:27,range:'19 to 27',name:"The One Who Waits",body:"You wait outside your own authority, handing the room the power to decide who you get to be. The seat is yours. You keep standing beside it, being excellent, being chosen, instead of choosing yourself. The cost is a life lived at the edge of a throne you never sit in."},
+    {min:28,max:36,range:'28 to 36',name:"The Seeker",body:"You have been seeking permission so long that the throne feels like it belongs to someone else. It does not. The only thing between you and the seat that was always yours is the part of you that keeps waiting outside it. That waiting kept you safe once. It is the last thing standing between you and your own reign."}
+  ];
+  function recompute(){
+    let sum=0, answered=0;
+    answers.forEach(v => { if(v!==null){ sum+=v; answered++; } });
+    totalNum.textContent = sum;
+    if(answered===12){
+      const b = bands.find(x => sum>=x.min && sum<=x.max);
+      document.getElementById('bandRange').textContent=b.range;
+      document.getElementById('bandName').textContent=b.name;
+      document.getElementById('bandBody').textContent=b.body;
+      result.classList.add('show');
+      if(!result.dataset.seen){ result.dataset.seen=1; result.scrollIntoView({behavior:'smooth',block:'start'}); }
+    }
+  }
+  qEls.forEach(q => {
+    const i = parseInt(q.dataset.i,10);
+    q.querySelectorAll('.opt').forEach(btn => {
+      btn.addEventListener('click', () => {
+        q.querySelectorAll('.opt').forEach(b=>b.classList.remove('sel'));
+        btn.classList.add('sel');
+        answers[i]=parseInt(btn.dataset.v,10);
+        recompute();
+      });
+    });
+  });
+</script>
+</body>
+</html>
